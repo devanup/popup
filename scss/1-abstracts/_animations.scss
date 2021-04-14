@@ -1,0 +1,100 @@
+.slide-in-tr {
+	-webkit-animation: slide-in-tr 0.4s forwards, fade-in 1s ease;
+	-moz-animation: slide-in-tr 0.4s forwards, fade-in 1s ease;
+	-ms-animation: slide-in-tr 0.4s forwards, fade-in 1s ease;
+	-o-animation: slide-in-tr 0.4s forwards, fade-in 1s ease;
+	animation: slide-in-tr 0.4s forwards, fade-in 1s ease;
+}
+
+.slide-out-tr {
+	-webkit-animation: slide-out-tr 2s forwards, fade-out 0.5s ease;
+	-moz-animation: slide-out-tr 2s forwards, fade-out 0.5s ease;
+	-ms-animation: slide-out-tr 2s forwards, fade-out 0.5s ease;
+	-o-animation: slide-out-tr 2s forwards, fade-out 0.5s ease;
+	animation: slide-out-tr 2s forwards, fade-out 0.5s ease;
+}
+
+.overlay-fade-in {
+	-webkit-animation: fade-in 1s ease;
+	-moz-animation: fade-in 1s ease;
+	-ms-animation: fade-in 1s ease;
+	-o-animation: fade-in 1s ease;
+	animation: fade-in 1s ease;
+}
+.overlay-fade-out {
+	-webkit-animation: fade-out 0.5s ease;
+	-moz-animation: fade-out 0.5s ease;
+	-ms-animation: fade-out 0.5s ease;
+	-o-animation: fade-out 0.5s ease;
+	animation: fade-out 0.5s ease;
+}
+@keyframes slide-in-tr {
+	100% {
+		top: 10px;
+		right: 10px;
+	}
+}
+@keyframes slide-out-tr {
+	from {
+		top: 10px;
+		right: 10px;
+	}
+	to {
+		top: -100%;
+		right: -100%;
+	}
+}
+.slide-in-br {
+	-webkit-animation: slide-in-br 0.4s forwards, fade-in 1s ease;
+	-moz-animation: slide-in-br 0.4s forwards, fade-in 1s ease;
+	-ms-animation: slide-in-br 0.4s forwards, fade-in 1s ease;
+	-o-animation: slide-in-br 0.4s forwards, fade-in 1s ease;
+	animation: slide-in-br 0.4s forwards, fade-in 1s ease;
+}
+
+.slide-out-br {
+	-webkit-animation: slide-out-br 2s forwards, fade-out 0.5s ease;
+	-moz-animation: slide-out-br 2s forwards, fade-out 0.5s ease;
+	-ms-animation: slide-out-br 2s forwards, fade-out 0.5s ease;
+	-o-animation: slide-out-br 2s forwards, fade-out 0.5s ease;
+	animation: slide-out-br 2s forwards, fade-out 0.5s ease;
+}
+
+@keyframes slide-in-br {
+	100% {
+		bottom: 10px;
+		right: 10px;
+	}
+}
+@keyframes slide-out-br {
+	from {
+		bottom: 10px;
+		right: 10px;
+	}
+	to {
+		bottom: -100%;
+		right: -100%;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		visibility: hidden;
+		opacity: 0;
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	from {
+		visibility: visible;
+		opacity: 1;
+	}
+	to {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
